@@ -2,28 +2,10 @@ import pandas as pd
 import openpyxl as openpyxl
 from openpyxl import Workbook
 from openpyxl.utils.dataframe import dataframe_to_rows
+from leitura_planilha import ler_arquivo_excel
 
 
-def ler_arquivo_excel(caminho_arquivo):
-    """
-    Função para ler um arquivo Excel usando o Pandas.
 
-    Parameters:
-    - caminho_arquivo (str): O caminho do arquivo Excel.
-
-    Returns:
-    """
-    try:
-        # Utiliza a função read_excel do Pandas para ler o arquivo Excel
-        dataframe = pd.read_excel(caminho_arquivo)
-        
-        # Retorna o DataFrame resultante
-        return dataframe
-    
-    except Exception as e:
-        # Em caso de erro, imprime uma mensagem e retorna None
-        print(f"Erro ao ler o arquivo Excel: {e}")
-        return None
 
 def listar_valores_coluna(dataframe, nome_coluna):
     """
@@ -153,13 +135,13 @@ def gerar_dataframes_por_valor(dataframe, nome_coluna):
         print(f"Erro ao gerar DataFrames por valor: {e}")
         return None
 
-def gerar_arquivos_excel(dataframes_por_valor, prefixo='lista-nominal_'):
+def gerar_arquivos_excel(dataframes_por_valor, sufixo='Paraisopolis'):
     """
     Função para gerar arquivos Excel para cada DataFrame em um dicionário.
 
     Parameters:
     - dataframes_por_valor: Um dicionário onde as chaves são os valores únicos e os valores são DataFrames.
-    - prefixo: Um prefixo opcional para os nomes dos arquivos Excel.
+    - sufixo: Um sufixo opcional para os nomes dos arquivos Excel.
 
     Returns:
     - dict: Um dicionário onde as chaves são os valores únicos e os valores são os caminhos dos arquivos Excel gerados.
@@ -179,7 +161,7 @@ def gerar_arquivos_excel(dataframes_por_valor, prefixo='lista-nominal_'):
                 sheet.append(row)
 
             # Define o caminho do arquivo
-            caminho_arquivo = f"{prefixo}{valor}.xlsx"
+            caminho_arquivo = f"/workspace/gerenciadorPlanilhas/planilhas-filtradas/{valor} {sufixo}.xlsx"
 
             # Salva o arquivo Excel
             workbook.save(caminho_arquivo)
@@ -195,9 +177,9 @@ def gerar_arquivos_excel(dataframes_por_valor, prefixo='lista-nominal_'):
         return None
 
 
-caminho_arquivo = "/workspace/gerenciadorPlanilhas/DRE_BT_02.xlsx"
+caminho_arquivo = "/workspace/gerenciadorPlanilhas/lista-nominal_PARAISOPOLIS.xlsx"
 dados_excel = ler_arquivo_excel(caminho_arquivo)
-coluna_selecionada = 'DC_UNIDADE'  # Substitua pelo nome da coluna desejada
+coluna_selecionada = 'TP_UNIDADE'  # Substitua pelo nome da coluna desejada
 valores_da_coluna = listar_valores_coluna(dados_excel, coluna_selecionada)
 valores_unicos = remover_duplicatas(valores_da_coluna)
 dataframes_por_valor = gerar_dataframes_por_valor(dados_excel, coluna_selecionada)
