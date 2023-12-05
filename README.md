@@ -21,7 +21,8 @@ The Worksheet Editor is a Python script designed for working with Excel workshee
    cd Worksheet-editor
 
 
-## Contributing
+## Contributing:
+
 We welcome contributions to improve and enhance the Worksheet Editor. To contribute, follow these steps:
 
 ### Fork the repository:
@@ -35,14 +36,17 @@ We welcome contributions to improve and enhance the Worksheet Editor. To contrib
 ```bash
 git clone https://github.com/YourUsername/Worksheet-editor.git
 cd Worksheet-editor
+```
 
-Create a new branch:
+### Create a new branch:
 
-Create a new branch for your changes:
+- Create a new branch for your changes:
 
 ```bash
 git checkout -b feature/your-feature-name
-Make your changes:
+```
+
+- Make your changes:
 
 Make the necessary changes and improvements.
 Commit your changes:
@@ -52,6 +56,7 @@ Commit your changes with a descriptive commit message:
 ```bash
 git add .
 git commit -m "Add a concise commit message"
+```
 
 - Push to your fork:
 - Push your changes to your fork on GitHub:
@@ -59,8 +64,9 @@ git commit -m "Add a concise commit message"
 ```bash
 Copy code
 git push origin feature/your-feature-name
+```
 
-- Open a pull request:
+### Open a pull request:
 
 Open a pull request on the original repository with a detailed description of your changes.
 
