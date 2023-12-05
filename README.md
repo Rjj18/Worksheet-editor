@@ -47,7 +47,6 @@ git clone https://github.com/YourUsername/Worksheet-editor.git
 cd Worksheet-editor
 
 
-
 ### Create a new branch:
 
 - Create a new branch for your changes:
