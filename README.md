@@ -45,7 +45,7 @@ We welcome contributions to improve and enhance the Worksheet Editor. To contrib
 ```bash
 git clone https://github.com/YourUsername/Worksheet-editor.git
 cd Worksheet-editor
-
+```bash
 
 ### Create a new branch:
 
