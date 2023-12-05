@@ -44,7 +44,7 @@ cd Worksheet-editor
 
 ```bash
 git checkout -b feature/your-feature-name
-```
+```bash
 
 - Make your changes:
 
