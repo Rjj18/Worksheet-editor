@@ -26,13 +26,13 @@ We welcome contributions to improve and enhance the Worksheet Editor. To contrib
 
 ### Fork the repository:
 
-- ** Click the "Fork" button at the top right of the repository's page.
-Clone your fork:
+- Click the "Fork" button at the top right of the repository's page.
 
-Clone your forked repository to your local machine:
+### Clone your fork:
 
-bash
-Copy code
+- Clone your forked repository to your local machine:
+
+```bash
 git clone https://github.com/YourUsername/Worksheet-editor.git
 cd Worksheet-editor
 Create a new branch:
