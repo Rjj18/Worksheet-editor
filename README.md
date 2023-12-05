@@ -40,8 +40,7 @@ Create a new branch:
 
 Create a new branch for your changes:
 
-bash
-Copy code
+```bash
 git checkout -b feature/your-feature-name
 Make your changes:
 
@@ -50,28 +49,22 @@ Commit your changes:
 
 Commit your changes with a descriptive commit message:
 
-bash
-Copy code
+```bash
 git add .
 git commit -m "Add a concise commit message"
-Push to your fork:
 
-Push your changes to your fork on GitHub:
+- Push to your fork:
+- Push your changes to your fork on GitHub:
 
-bash
+```bash
 Copy code
 git push origin feature/your-feature-name
-Open a pull request:
+
+- Open a pull request:
 
 Open a pull request on the original repository with a detailed description of your changes.
-License
-This project is licensed under the MIT License.
 
-vbnet
-Copy code
-
-Replace `YourUsername` in the cloning step with your GitHub username. These instructions provide a guide for contributors to fork the repository, make changes, and open pull requests to contribute back to the original project.
-
+## License
 
 
 
