@@ -24,9 +24,9 @@ The Worksheet Editor is a Python script designed for working with Excel workshee
 ## Contributing
 We welcome contributions to improve and enhance the Worksheet Editor. To contribute, follow these steps:
 
-Fork the repository:
+### Fork the repository:
 
-Click the "Fork" button at the top right of the repository's page.
+- ** Click the "Fork" button at the top right of the repository's page.
 Clone your fork:
 
 Clone your forked repository to your local machine:
