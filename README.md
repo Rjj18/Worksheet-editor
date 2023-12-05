@@ -67,9 +67,8 @@ Commit your changes with a descriptive commit message:
 git add .
 git commit -m "Add a concise commit message"
 ```
-
 - Push to your fork:
-- Push your changes to your fork on GitHub:
+Push your changes to your fork on GitHub:
 
 ```bash
 git push origin feature/your-feature-name
