@@ -45,7 +45,8 @@ We welcome contributions to improve and enhance the Worksheet Editor. To contrib
 ```bash
 git clone https://github.com/YourUsername/Worksheet-editor.git
 cd Worksheet-editor
-```
+
+
 
 ### Create a new branch:
 
@@ -65,7 +66,7 @@ Commit your changes with a descriptive commit message:
 ```bash
 git add .
 git commit -m "Add a concise commit message"
-```
+
 
 - Push to your fork:
 - Push your changes to your fork on GitHub:
