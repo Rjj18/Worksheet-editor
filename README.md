@@ -19,20 +19,16 @@ The Worksheet Editor is a Python script designed for working with Excel workshee
    ```bash
    git clone https://github.com/Rjj18/Worksheet-editor.git
    cd Worksheet-editor
-   ```bash
 
 2. Install the required dependencies:
    
    ```bash
    pip install -r requirements.txt
-   ```bash
+   
    
 4. Run the script:
    ```bash
    python worksheet_editor.py
-   ```bash
-
-    
 
 ## Contributing:
 
